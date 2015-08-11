@@ -3,7 +3,6 @@
 
 ## Install ##
 
-- Ember-CLI versions 0.2.3+
     ````bash
     ember install demo-helper
     ````

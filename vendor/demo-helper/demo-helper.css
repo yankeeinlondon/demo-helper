@@ -1,6 +1,4 @@
-// CSS from demo-helper component
-
-
+// CSS for demo-helper component
 .demo-css h1 {
   font-size: 4rem;
   margin-bottom: .25rem;
@@ -28,7 +26,6 @@
 .demo-css .display-component .yield-variable {
   font-weight: 800;
 }
-
 
 .demo-css h3 {
   font-family: "Courier New", Courier, monospace;
