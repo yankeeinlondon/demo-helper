@@ -1,0 +1,110 @@
+// CSS from demo-helper component
+
+
+.demo-css h1 {
+  font-size: 4rem;
+  margin-bottom: .25rem;
+  padding-bottom: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+.demo-css a {
+  text-decoration: none;
+  font-weight: 500;
+  margin: auto 2px auto 2px;
+}
+.demo-css a:hover {
+  background: lightgrey;
+  border-radius: 5px;
+}
+.demo-css h2 {
+  font-weight: 100;
+  font-size: 1.7rem;
+  font-style: italic;
+  color: darkgrey;
+  margin-top: .5rem;
+  margin-bottom: 3rem;
+}
+
+.demo-css .display-component .yield-variable {
+  font-weight: 800;
+}
+
+
+.demo-css h3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.demo-css .side-note {
+  font-weight: 300;
+  font-family: cursive;
+  font-size: smaller;
+}
+
+.demo-css row {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.demo-css row > * {
+  flex: 1 1;
+  margin: 15px 5px 5px 5px;
+}
+
+.demo-css widget {
+  flex-basis: 200px;
+}
+
+.demo-css controls {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  margin: 10px 0 20px 0;
+}
+
+.demo-css control {
+  height: auto;
+  flex: 1 1;
+  margin: 10px 0 0 10px;
+  display:flex;
+  align-items: baseline;
+}
+
+.demo-css control.center {
+  justify-content: center;
+}
+.demo-css control.center > * {
+  flex-grow: 0;
+}
+
+.demo-css control > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0 5px;
+}
+
+.demo-css control .name {
+  flex-grow: 0;
+}
+
+.demo-css prop {
+  background: #F5F5F5;
+  padding: 3px 5px 4px 5px;
+  border-radius: 5px;
+  color: #3F3F3F;
+}
+
+.demo-css code {
+  font-family: "Courier New", Courier, monospace;
+  line-spacing: 1rem;
+  flex-basis: 250px;
+  background-color: inherit;
+  color: #3F3F3F;
+}
+
+.demo-css description {
+  flex-basis: 350px;
+  flex-grow: 2;
+}

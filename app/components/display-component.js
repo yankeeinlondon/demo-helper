@@ -1,0 +1,1 @@
+export { default } from 'demo-helper/components/display-component';

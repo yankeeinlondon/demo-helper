@@ -1,3 +1,62 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="container">
+    <h1 id="title">demo-helper</h1>
+    <h2>Helper components when building addons</h2>
 
-{{outlet}}
+    {{outlet}}
+</div>
+
+{{#if notIndexPage}}
+    {{#link-to 'index'}}
+    <div class="back-navigation">
+        {{ui-icon icon='arrow-circle-left' size='5x' class='animated fadeIn'}}
+    </div>
+    {{/link-to}}
+{{/if}}
+
+{{#demo-css class='container'}}
+<row>
+  <widget>
+    <span style='font-family: "Courier New", Courier, monospace;'>
+      {{display-component props='props' test=test componentName='display-component' as='foobar'}}
+    </span>
+  </widget>
+  <code>
+    \{{display-component<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;componentName='display-component'<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;as='foobar'<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;props='props'<br/>
+        &nbsp;&nbsp;&nbsp;&nbsp;test=test<br/>
+    }}
+  </code>
+  <description>
+    This one is a bit reflexive. The goal is to provide a very simple signature to document a component's call while keeping the bound values active. The 'test' parameter can be toggled here between apple and orange to start to get a sense for how it works.
+    <br/>
+    {{ui-toggle-button on='apple' onValue='apple' off='orange' offValue='orange' value=test}}
+  </description>
+</row>
+<row>
+  <widget>
+    <i>not applicable</i>
+  </widget>
+  <code>
+    {{#display-component componentName='demo-css'}}
+      Your content goes here
+    {{/display-component}}
+  </code>
+  <description>
+    By surrounding your content with the <prop>demo-css</prop> component you are able to take advantage of reusable CSS that is intended for building the dummy apps of addons.
+  </description>
+</row>
+<row>
+  <widget>
+
+  </widget>
+  <code>
+
+  </code>
+  <description>
+
+  </description>
+</row>
+
+{{/demo-css}}
