@@ -105,3 +105,20 @@
   flex-basis: 350px;
   flex-grow: 2;
 }
+
+.demo-css .indent {
+  border-right: 1px;
+  border-right-style: dotted;
+  border-right-color: #BFBFBF;
+  margin-right: 5px;
+}
+
+.demo-css .dim {
+  color: #7F7F7F;
+}
+
+.demo-css .normal {
+  color: initial;
+}
+
+

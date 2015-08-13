@@ -1,31 +1,33 @@
 <span class="component">
-  <b>\{{{{#if hasBlock}}#{{/if}}<span class="name">{{componentName}}</span></b>
+  {{_indentSpacing}}<b>\{{{{#if hasBlock}}#{{/if}}<span class="name">{{componentName}}</span></b>
 </span>
+{{#if _hasVisibleProperties}}
 <span class="properties">
   {{#each _props as |p|}}
     {{#if p.display}}
       <span id='{{elementId}}-{{p.prop}}' class="property">
-        <br/>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br/>{{_indentSpacing}}&nbsp;&nbsp;&nbsp;&nbsp;
         <span class="name">{{p.prop}}</span>=<span class="quote-mark">{{p.quoteMark}}</span><span class="value {{p.type}}-type">{{p.value}}</span><span class="quote-mark">{{p.quoteMark}}</span>
       </span>
     {{/if}}
   {{/each}}
 </span>
+{{/if}}
+{{! END => HAS VISIBLE PROPERTIES}}
 <span class="close-out">
   {{#if as}}
-    {{#if _props}}
+    {{#if _hasVisibleProperties}}
       <br/>
-      &nbsp;&nbsp;&nbsp;&nbsp;
     {{/if}}
-    as <span class="yield-variable">|{{as}}|</span>
+    {{#if _hasVisibleProperties}}&nbsp;&nbsp;&nbsp;&nbsp;{{/if}}{{_indentSpacing}}as <span class="yield-variable">|{{as}}|</span>
   {{/if}}
-  {{#if _props}}
+  {{! END "AS" BLOCK }}
+  {{#if _hasVisibileProperties}}
     <br/>
   {{/if}}
   <b>}}</b><br/>
 </span>
-&nbsp;&nbsp;&nbsp;&nbsp;{{yield}}
+{{yield}}
 {{#if hasBlock}}
-  <br/><b>\{{/<span class="name">{{componentName}}</span>}}</b>
+  {{_indentSpacing}}<b>\{{/<span class="name">{{componentName}}</span>}}</b>
 {{/if}}
