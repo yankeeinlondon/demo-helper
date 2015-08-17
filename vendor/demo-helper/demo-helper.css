@@ -121,4 +121,11 @@
   color: initial;
 }
 
+.demo-css .flash-messages {
+  position: fixed;
+  left: 25%;
+  width: 50%;
+  top: 25px;
+}
+
 
