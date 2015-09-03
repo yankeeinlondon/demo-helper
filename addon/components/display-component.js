@@ -3,7 +3,7 @@ const htmlSafe = Ember.String.htmlSafe;
 const { keys, create } = Object; // jshint ignore:line
 const {computed, observer, $, A, run, on, typeOf, debug, defineProperty, get, set, inject, isEmpty} = Ember;  // jshint ignore:line
 import layout from '../templates/components/display-component';
-const ignoredProperties = ['_indent','__ember_meta__', 'as', 'componentName','_dim','_container'];
+const ignoredProperties = ['_indent','__ember_meta__', 'as', 'componentName','_dim','_container', '_target'];
 
 export default Ember.Component.extend({
   layout: layout,
@@ -59,6 +59,9 @@ export default Ember.Component.extend({
       if(type === 'string' && value.substr(0,1) === ':') {
         value = value.substr(1);
         type = 'bound-variable';
+      }
+      if(type === 'function') {
+        value = 'f() {...}';
       }
       const quoteMark = type === 'string' ? '\'' : '';
       const display = !this.get('displayEmpty') && isEmpty(value) ? false : true;

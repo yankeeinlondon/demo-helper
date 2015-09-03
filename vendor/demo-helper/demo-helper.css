@@ -52,6 +52,10 @@
 
 .demo-css widget {
   flex-basis: 200px;
+  text-align: center;
+}
+.demo-css widget.wide {
+  flex-basis: 350px;
 }
 
 .demo-css controls {
@@ -92,6 +96,31 @@
   border-radius: 5px;
   color: #3F3F3F;
 }
+.demo-css css {
+  font-family: monospace;
+  padding: 2px 4px 3px 4px;
+  border-radius: 4px;
+  cursor: default;
+}
+.demo-css css:hover {
+  background: rgba(231, 231, 210, 0.753);
+}
+.demo-css file {
+  background: #F5F5f5;
+  padding: 3px 5px 4px 5px;
+  color: #3F3F3F;
+  border-bottom: #1F1F22 2px solid;
+  border-radius: 0;
+  cursor: default;
+}
+
+.demo-css prop.center,
+.demo-css code.center,
+.demo-css css.center,
+.demo-css file.center {
+  display:block;
+  text-align: center;
+}
 
 .demo-css code {
   font-family: "Courier New", Courier, monospace;
@@ -100,10 +129,20 @@
   background-color: inherit;
   color: #3F3F3F;
 }
+.demo-css code.wide {
+  flex-basis: 350px;
+}
 
 .demo-css description {
   flex-basis: 350px;
   flex-grow: 2;
+}
+
+.demo-css .monospace {
+  font-family: monospace;
+}
+.demo-css .light {
+  font-weight: 200;
 }
 
 .demo-css .indent {
@@ -133,5 +172,6 @@
   width: 50%;
   top: 25px;
 }
+
 
 

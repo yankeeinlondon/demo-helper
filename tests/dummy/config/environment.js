@@ -21,7 +21,20 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com",
       'media-src': "'self'"
     },
+    flashMessageDefaults: {
+      // flash message defaults
+      timeout: 5000,
+      extendedTimeout: 0,
+      priority: 200,
+      sticky: true,
+      showProgress: true,
 
+      // service defaults
+      type: 'alpaca',
+      types: [ 'alpaca', 'notice', 'foobar' ],
+      injectionFactories: [ 'route', 'controller', 'view', 'component' ],
+      preventDuplicates: false
+    },
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created

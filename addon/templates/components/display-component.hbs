@@ -19,7 +19,9 @@
     {{#if _hasVisibleProperties}}
       <br/>
     {{/if}}
-    {{#if _hasVisibleProperties}}&nbsp;&nbsp;&nbsp;&nbsp;{{/if}}{{_indentSpacing}}as <span class="yield-variable">|{{as}}|</span>
+    {{#if _hasVisibleProperties}}&nbsp;&nbsp;&nbsp;&nbsp;{{_indentSpacing}}{{/if}}
+    {{#if _target}}{{_target}} {{/if}}
+    as <span class="yield-variable">|{{as}}|</span>
   {{/if}}
   {{! END "AS" BLOCK }}
   {{#if _hasVisibileProperties}}
