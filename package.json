@@ -1,6 +1,6 @@
 {
   "name": "demo-helper",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Helper for addon dummy apps.",
   "directories": {
     "doc": "doc",
@@ -11,12 +11,26 @@
     "build": "ember build",
     "test": "ember try:testall"
   },
-  "repository": "",
+  "repository": "https://github.com/ksnyde/demo-helper",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
+  "author": "Ken Snyder",
   "license": "MIT",
+    "files": [
+      "Brocfile.js",
+      "LICENSE.md",
+      "README.md",
+      "addon",
+      "app",
+      "bower.json",
+      "config",
+      "index.js",
+      "package.json",
+      "testem.json",
+      "vendor"
+    ],
+    "main": "index.js",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
     "ember-cli": "1.13.7",
