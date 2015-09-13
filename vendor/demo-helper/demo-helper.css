@@ -187,3 +187,10 @@
 .demo-css .center {
   text-align: center;
 }
+
+.demo-css h1 {
+  display: flex;
+}
+.demo-css h1 > span {
+  flex: 1 1;
+}

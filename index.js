@@ -9,9 +9,7 @@ module.exports = {
   contentFor: function(type, config) {
     switch(type) {
       case 'head':
-        console.log('config object: %o', config);
-        return '<link href="/vendor/demo-helper/emberjs.png" rel="icon" type="image/png" />';
-
+        return '<link href="/demo-helper/emberjs.png" rel="icon" type="image/png" />';
       default:
         return '';
     }

@@ -1,0 +1,1 @@
+export { default } from 'demo-helper/components/demo-app-template';
