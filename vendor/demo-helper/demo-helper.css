@@ -1,7 +1,11 @@
 // CSS for demo-helper component
 .demo-css h1 {
   font-size: 4rem;
-  margin-bottom: .25rem;
+  padding-bottom: 0px;
+  font-family: "Courier New", Courier, monospace;
+}
+.demo-css .addon-name {
+  font-size: 4rem;
   padding-bottom: 0px;
   font-family: "Courier New", Courier, monospace;
 }
@@ -14,13 +18,18 @@
   background: lightgrey;
   border-radius: 5px;
 }
-.demo-css h2 {
+.demo-css h2,
+.demo-css .title-block .sub-heading {
+  position: relative;
+  top: -10px;
   font-weight: 100;
   font-size: 1.7rem;
   font-style: italic;
   color: darkgrey;
-  margin-top: .5rem;
-  margin-bottom: 3rem;
+}
+.demo-css .title-block .badges {
+  line-height: 1;
+  margin-left: 1px;
 }
 
 .demo-css .display-component .yield-variable {
@@ -188,9 +197,50 @@
   text-align: center;
 }
 
-.demo-css h1 {
+.demo-css .page-header {
   display: flex;
-}
-.demo-css h1 > span {
   flex: 1 1;
 }
+.demo-css .page-header .title-block {
+  flex: 1 1;
+}
+.demo-css .page-header .navigation {
+  flex: 0 0;
+  margin-right: 25px;
+}
+.demo-css .title-block {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1;
+}
+.demo-css .title-block > span {
+  flex: 1 1;
+}
+
+
+.demo-css .back-navigation {
+  flex: 0 1;
+}
+.demo-css .back-navigation i:hover {
+  color: #3D3D3D;
+  transition-duration: 0.5s;
+}
+.demo-css .back-navigation {
+  position: relative;
+  top: inherit;
+}
+
+
+
+
+.demo-css .components a code {
+  padding: 6px;
+  background-color: #F5F5F5;
+  transition-duration: 0.5s;
+}
+.demo-css .components a code:hover {
+  background-color: #37AA26;
+  cursor: pointer;
+  list-style: none;
+}
+

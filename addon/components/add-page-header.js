@@ -6,6 +6,7 @@ import layout from '../templates/components/add-page-header';
 
 export default Ember.Component.extend({
   layout: layout,
+  classNames: ['title-block'],
   repo: computed.alias('name'),
   title: computed.alias('name'),
   repoOwner: 'lifegadget'

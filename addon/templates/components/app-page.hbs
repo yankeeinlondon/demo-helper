@@ -1,1 +1,22 @@
-{{yield}}
+{{#demo-css}}
+  <div class="container">
+    <div class="page-header">
+      <span class="title-block">
+        {{add-page-header repo=repo repoOwner=repoOwner subHeading=subHeading}}
+      </span>
+      <span class="navigation">
+        {{#if notIndexPage}}
+            {{#link-to 'index'}}
+            <div class="back-navigation">
+                {{ui-icon icon='arrow-circle-left' size='5x' class='animated fadeIn'}}
+            </div>
+            {{/link-to}}
+        {{/if}}
+      </span>
+  </div>
+  <div class="page-content">
+    {{outlet}}
+    {{yield}}
+  </div>
+</div>
+{{/demo-css}}
