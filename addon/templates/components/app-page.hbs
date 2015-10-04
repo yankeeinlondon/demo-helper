@@ -15,8 +15,11 @@
       </span>
   </div>
   <div class="page-content">
-    {{outlet}}
-    {{yield}}
+    {{#if hasBlock}}
+      {{yield}}
+    {{else}}
+      {{outlet}}
+    {{/if}}
   </div>
 </div>
 {{/demo-css}}

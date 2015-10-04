@@ -42,6 +42,19 @@
   font-weight: 800;
   font-size: 2em;
 }
+.demo-css h3.section-heading {
+  margin-top: -55px;
+  margin-bottom: 25px;
+  color: darkgrey;
+}
+
+.demo-css description h4 {
+  margin-top: 0px;
+}
+.demo-css h5 {
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 .demo-css .side-note {
   font-weight: 300;

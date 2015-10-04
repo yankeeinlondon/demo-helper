@@ -3,9 +3,7 @@
 
 ## Install ##
 
-    ````bash
     ember install demo-helper
-    ````
 
 ## Version Compatibility
 
@@ -16,7 +14,7 @@ This may very well work with older version of Ember and Ember-CLI but it was int
 
 ## Repo Contribution
 
-We're open to your creative suggestions but please move past the "idea" stage 
+We're open to your creative suggestions but please move past the "idea" stage
 and send us a PR so we can incorporate your ideas without killing ourselves. :)
 
 ## Licensing

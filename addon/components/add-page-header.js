@@ -8,9 +8,9 @@ export default Ember.Component.extend({
   layout: layout,
   classNames: ['title-block'],
   repo: computed.alias('name'),
-  _npm: computed('repo', function() {
-    const {npm,repo} = this.getProperties('npm','repo');
-    return npm ? npm : repo;
+  _npm: computed('name', function() {
+    const {npm,name} = this.getProperties('npm','name');
+    return npm ? npm : name;
   }),
   title: computed.alias('name'),
   repoOwner: 'lifegadget'

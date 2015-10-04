@@ -1,13 +1,13 @@
 <span class="badges">
   {{#if repo}}
     <a href="https://travis-ci.org/{{repoOwner}}/{{repo}}">
-      <img src="https://travis-ci.org/{{repoOwner}}/{{repo}}.svg" alt="travis">
+      <img src="{{travisSource}}" alt="travis">
     </a>
-    <a href="https://www.npmjs.com/package/{{npm}}">
-      <img src="https://badge.fury.io/js/{{npm}}.svg" alt="fury">
+    <a href="https://www.npmjs.com/package/{{_npm}}">
+      <img src="{{npmSource}}" alt="npm">
     </a>
     <a href="https://codeclimate.com/github/{{repoOwner}}/{{repo}}">
-      <img src="https://codeclimate.com/github/{{repoOwner}}/{{repo}}/badges/gpa.svg" />
+      <img src="{{codeClimateSource}}" />
     </a>
   {{/if}}
 </span>
