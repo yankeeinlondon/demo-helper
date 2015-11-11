@@ -1,6 +1,6 @@
 {
   "name": "demo-helper",
-  "version": "0.0.13",
+  "version": "0.0.16",
   "description": "Helper for addon dummy apps.",
   "directories": {
     "doc": "doc",
