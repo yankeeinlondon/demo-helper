@@ -41,6 +41,9 @@
   display:flex;
   min-height: 10px;
 }
+.demo-css .lazy-image-container.loaded .lazy-image-placeholder {
+  display:none;
+}
 .demo-css .lazy-image-placeholder {
   top: -10px;
   right: 38%;
