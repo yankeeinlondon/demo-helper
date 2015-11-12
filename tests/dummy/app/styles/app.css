@@ -56,23 +56,6 @@ description {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .demo-table td {
 	padding-right: 1rem;
 	padding-top: .5rem;
@@ -82,8 +65,6 @@ description {
 .demo-table td i {
 	font-size: 16pt;
 }
-
-
 
 a:hover {
     text-decoration: none;
@@ -356,4 +337,3 @@ ul.components {
     list-style: none;
     text-align: center;
 }
-

@@ -1,9 +1,9 @@
-<div class="container">
-    <h1 id="title">demo-helper</h1>
-    <h2>Helper components when building addons</h2>
+{{#app-page
+  repo='demo-helper'
+  repoOwner='ksnyde'
+  subHeading='Helper components when building addons'
+}}
 
-    {{outlet}}
-</div>
 
 {{#if notIndexPage}}
     {{#link-to 'index'}}
@@ -13,7 +13,7 @@
     {{/link-to}}
 {{/if}}
 
-{{#demo-css class='container'}}
+
 <h3>demo-css</h3>
 <row>
   <widget>
@@ -61,6 +61,7 @@
     The <prop>js</prop> helper allows prism to present a JS function to the UI
   </description>
 </row>
+
 <row>
   <widget>
     {{json myJson}}
@@ -72,6 +73,9 @@
     The <prop>json</prop> helper allows prism to present a JSON data structure to the UI
   </description>
 </row>
+
+
+
 <code>
 {{#display-component props='props' test=test componentName='display-component' as='foobar' as |g|}}
   {{display-component componentName='fictional-thing' _indent=1 _container=g foo=bar bar='baz'}}
@@ -83,4 +87,4 @@
   {{display-component componentName='fictional-thing' _indent=1 _container=g bar=':baz'}}
 {{/display-component}}
 </code>
-{{/demo-css}}
+{{/app-page}}

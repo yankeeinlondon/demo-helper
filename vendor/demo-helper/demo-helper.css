@@ -31,6 +31,11 @@
 .demo-css .title-block .badges {
   line-height: 1;
   margin-left: 1px;
+  display: flex;
+}
+
+.demo-css .badges .lazy-image-container {
+  min-height: 25px;
 }
 
 .demo-css .display-component .yield-variable {
@@ -260,4 +265,3 @@
   cursor: pointer;
   list-style: none;
 }
-

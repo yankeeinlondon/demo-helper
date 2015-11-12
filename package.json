@@ -1,6 +1,6 @@
 {
   "name": "demo-helper",
-  "version": "0.0.28",
+  "version": "0.0.32",
   "description": "Helper for addon dummy apps.",
   "directories": {
     "doc": "doc",
@@ -17,20 +17,17 @@
   },
   "author": "Ken Snyder",
   "license": "MIT",
+  "main": "index.js",
   "files": [
-    "Brocfile.js",
     "LICENSE.md",
     "README.md",
     "addon",
     "app",
     "bower.json",
-    "config",
-    "index.js",
     "package.json",
     "testem.json",
     "vendor"
   ],
-  "main": "index.js",
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
     "ember-cli": "^1.13.11",
@@ -48,15 +45,16 @@
     "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.1",
     "ember-export-application-global": "^1.0.4",
+    "ember-lazy-image": "0.0.14",
     "ember-resolver": "2.0.3",
     "ember-truth-helpers": "1.2.0",
+    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-try": "~0.0.8"
   },
   "keywords": [
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-babel": "^5.1.5",
     "ember-prism": "0.0.6",
