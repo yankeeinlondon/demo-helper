@@ -1,6 +1,8 @@
 import Ember from 'ember';
 const { keys, create } = Object; // jshint ignore:line
-const {computed, observer, $, A, run, on, typeOf, debug, defineProperty, get, set, inject, isEmpty} = Ember;  // jshint ignore:line
+const { computed, observer, $, run, on, typeOf, debug, isPresent } = Ember;  // jshint ignore:line
+const { defineProperty, get, set, inject, isEmpty, merge } = Ember; // jshint ignore:line
+const a = Ember.A; // jshint ignore:line
 
 import layout from '../templates/components/add-page-header';
 

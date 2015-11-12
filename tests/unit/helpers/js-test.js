@@ -5,6 +5,7 @@ module('Unit | Helper | js');
 
 // Replace this with your real tests.
 test('it works', function(assert) {
-  let result = js(42);
+  let testFunc = function() { return null; };
+  let result = js([testFunc]);
   assert.ok(result);
 });
