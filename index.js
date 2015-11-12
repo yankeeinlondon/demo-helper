@@ -6,6 +6,7 @@ module.exports = {
   included: function(app) {
     app.import('vendor/demo-helper/demo-helper.css');
     app.import(app.bowerDirectory + '/prism/themes/prism.css');
+    app.import(app.bowerDirectory + '/prism/prism.js');
   },
   contentFor: function(type, config) {
     switch(type) {
