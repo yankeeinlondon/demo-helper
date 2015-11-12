@@ -1,13 +1,13 @@
 <span class="badges">
   {{#if repo}}
     <a href="https://travis-ci.org/{{repoOwner}}/{{repo}}">
-      {{lazy-image url=travisSource errorText='<!-- No NPM Badge -->'}}
+      {{lazy-image url=travisSource errorText=''}}
     </a>
     <a href="https://www.npmjs.com/package/{{_npm}}">
-      {{lazy-image url=npmSource errorText='<!-- No NPM Badge -->'}}
+      {{lazy-image url=npmSource errorText=''}}
     </a>
     <a href="https://codeclimate.com/github/{{repoOwner}}/{{repo}}">
-      {{lazy-image url=codeClimateSource errorText='<!-- No Code Climate Badge -->'}}
+      {{lazy-image url=codeClimateSource errorText=''}}
     </a>
   {{/if}}
 </span>

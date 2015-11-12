@@ -33,9 +33,23 @@
   margin-left: 1px;
   display: flex;
 }
-
+.demo-css .title-block .badges > a {
+  flex: 1 1;
+  flex-basis: 150px;
+}
 .demo-css .badges .lazy-image-container {
-  min-height: 25px;
+  display:flex;
+  min-height: 10px;
+}
+.demo-css .lazy-image-placeholder {
+  top: -10px;
+  right: 38%;
+}
+.demo-css .lazy-image-container .lazy-image {
+  display: hidden;
+}
+.demo-css .lazy-image-container.loaded.error-thrown .lazy-image {
+  display: none;
 }
 
 .demo-css .display-component .yield-variable {
