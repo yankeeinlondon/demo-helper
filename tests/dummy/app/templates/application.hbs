@@ -50,8 +50,28 @@
       <p><b>Note</b>: there is also a <prop>_indent</prop> property that can be used to indent block scope; there is also a <prop>_dim</prop> boolean property which can dim a particular component.</p>
   </description>
 </row>
-
-
+<row>
+  <widget>
+    {{js myFunction}}
+  </widget>
+  <code>
+    \{{js myFunction}}
+  </code>
+  <description>
+    The <prop>js</prop> helper allows prism to present a JS function to the UI
+  </description>
+</row>
+<row>
+  <widget>
+    {{json myJson}}
+  </widget>
+  <code>
+    \{{json myJson}}
+  </code>
+  <description>
+    The <prop>json</prop> helper allows prism to present a JSON data structure to the UI
+  </description>
+</row>
 <code>
 {{#display-component props='props' test=test componentName='display-component' as='foobar' as |g|}}
   {{display-component componentName='fictional-thing' _indent=1 _container=g foo=bar bar='baz'}}
@@ -62,7 +82,5 @@
   {{display-component componentName='fictional-thing' _indent=1 _container=g foo=bar bar='baz'}}
   {{display-component componentName='fictional-thing' _indent=1 _container=g bar=':baz'}}
 {{/display-component}}
-
-
 </code>
 {{/demo-css}}

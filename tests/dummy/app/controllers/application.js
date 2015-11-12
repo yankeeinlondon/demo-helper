@@ -8,6 +8,13 @@ export default Ember.Controller.extend({
   notIndexPage: Ember.computed.not('isIndexPage'),
   props: 'props',
   test: 'orange',
+  myFunction(context) {
+    console.log('what is life without context: %o', context);
+  },
+  myJson: [
+    {id: 1, text: 'one thing'},
+    {id: 2, text: 'leads to another'}
+  ],
 
   actions: {
     toggleRepression: function() {

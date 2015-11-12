@@ -23,7 +23,7 @@ export default Ember.Component.extend({
     return `https://travis-ci.org/${repoOwner}/${repo}.svg`;
   }),
   npmSource: computed('_npm', function() {
-    const {repoOwner,_npm} = this.getProperties('repoOwner', '_npm');
+    const {_npm} = this.getProperties( '_npm');
     return `https://badge.fury.io/js/${_npm}.svg`;
   }),
   codeClimateSource: computed('repo', function() {

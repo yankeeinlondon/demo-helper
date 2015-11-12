@@ -5,8 +5,10 @@ const { defineProperty, get, set, inject, isEmpty, merge } = Ember; // jshint ig
 const a = Ember.A; // jshint ignore:line
 
 export function js(params) {
-  const f = this.get(params[0]);
-  return typeOf(f) === 'function' ? f.toString() : '';
+  const f = params[0];
+  const pre = '<pre><code class="language-js">';
+  const post = '</code></pre>';
+  return typeOf(f) === 'function' ? Ember.String.htmlSafe(pre + f.toString() + post) : '';
 }
 
 export default Ember.Helper.helper(js);
