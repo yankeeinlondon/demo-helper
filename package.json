@@ -1,6 +1,6 @@
 {
   "name": "demo-helper",
-  "version": "0.0.37",
+  "version": "0.0.39",
   "description": "Helper for addon dummy apps.",
   "directories": {
     "doc": "doc",
@@ -33,7 +33,8 @@
     "package.json",
     "testem.json",
     "vendor",
-    "public"
+    "public",
+    "public/images/"
   ],
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
