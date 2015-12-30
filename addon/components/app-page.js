@@ -5,5 +5,7 @@ export default Ember.Component.extend({
   layout: layout,
   classNames: ['app-page'],
   isIndexPage: Ember.computed.equal('currentPath', 'index'),
-  notIndexPage: Ember.computed.not('isIndexPage')
+  notIndexPage: Ember.computed.not('isIndexPage'),
+  description: Ember.computed.alias('subHeading'),
+  desc: Ember.computed.alias('subHeading')
 });

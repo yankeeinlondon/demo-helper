@@ -1,12 +1,14 @@
 /* jshint node: true */
 'use strict';
+var chalk = require('chalk');
 
 module.exports = {
   name: 'demo-helper',
-  included: function(app) {
+  included: function(app, parentAddon) {
+    var target = (parentAddon || app);
     app.import('vendor/demo-helper/demo-helper.css');
-    app.import(app.bowerDirectory + '/prism/themes/prism.css');
-    app.import(app.bowerDirectory + '/prism/prism.js');
+    target.import(target.bowerDirectory + '/prism/themes/prism.css');
+    target.import(target.bowerDirectory + '/prism/prism.js');
   },
   contentFor: function(type, config) {
     switch(type) {
@@ -15,5 +17,10 @@ module.exports = {
       default:
         return '';
     }
+  },
+  afterInstall: function() {
+    this.ui.writeLine('Demo Helper installed!');
+    this.ui.writeLine();
+    this.ui.writeLine('use ' + chalk.bold('app-page') + ' in your application.hbs dummy app.');
   }
 };

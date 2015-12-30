@@ -17,7 +17,5 @@ module.exports = function(defaults) {
   app.import('bower_components/bootstrap/js/tooltip.js');
   app.import('bower_components/fontawesome/css/font-awesome.css');
 
-  app.import('vendor/demo-helper/demo-helper.css');
-
   return app.toTree();
 };

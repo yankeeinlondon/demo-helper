@@ -10,7 +10,7 @@ module.exports = {
   afterInstall: function() {
     return this.addBowerPackagesToProject([
 		 {name: 'prism', target: '1.3.0'},
-     {name: 'bootstrap', target: '3.3.5'}
+     {name: 'bootstrap', target: '3.3.6'}
     ]);
   }
 };
