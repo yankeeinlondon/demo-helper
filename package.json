@@ -22,14 +22,19 @@
   "license": "MIT",
   "main": "index.js",
   "files": [
+    "ember-cli-build.js",
     "LICENSE.md",
     "README.md",
     "addon",
+    "blueprints",
     "app",
     "bower.json",
+    "index.js",
     "package.json",
     "testem.json",
-    "vendor"
+    "vendor",
+    "public",
+    "public/images/"
   ],
   "devDependencies": {
     "broccoli-asset-rev": "^2.2.0",
@@ -60,7 +65,7 @@
   "dependencies": {
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-babel": "^5.1.5",
-    "ember-prism": "0.0.6",
+    "ember-prism": "0.0.7",
     "ember-lazy-image": "0.0.14",
     "ui-icon": "^0.5.1",
     "ui-button": "^0.6.1"

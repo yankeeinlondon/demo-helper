@@ -13,7 +13,7 @@ module.exports = {
   contentFor: function(type, config) {
     switch(type) {
       case 'head':
-        return '<link href="/demo-helper/emberjs.png" rel="icon" type="image/png" />';
+        return '<link href="/demo-helper/images/emberjs-icon.png" rel="icon" type="image/png" />';
       default:
         return '';
     }
