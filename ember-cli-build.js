@@ -6,7 +6,7 @@ module.exports = function(defaults) {
     babel: {
     }
   });
-
+  app.options.babel = { includePolyfill: true };
   /*
     This build file specifes the options for the dummy test app of this
     addon, located in `/tests/dummy`
