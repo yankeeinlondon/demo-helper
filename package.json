@@ -1,6 +1,6 @@
 {
   "name": "demo-helper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "WIP. Helper for ember addons.",
   "directories": {
     "doc": "doc",
@@ -65,7 +65,7 @@
     "ember-cli-htmlbars": "^1.0.1",
     "ember-cli-babel": "^5.1.6",
     "ember-prism": "0.0.7",
-    "ember-lazy-image": "lifegadget/ember-lazy-image",
+    "ember-lazy-image": "0.0.14",
     "ui-icon": "^0.5.5",
     "ui-button": "^0.6.6"
   },
