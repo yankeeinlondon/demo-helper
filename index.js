@@ -7,6 +7,9 @@ module.exports = {
   included: function(app, parentAddon) {
     var target = (parentAddon || app);
     app.import('vendor/demo-helper/demo-helper.css');
+    target.import(target.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
+    target.import(target.bowerDirectory + '/fontawesome/css/font-awesome.css');
+
     target.import(target.bowerDirectory + '/prism/themes/prism.css');
     target.import(target.bowerDirectory + '/prism/prism.js');
   },

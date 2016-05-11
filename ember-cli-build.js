@@ -6,9 +6,5 @@ module.exports = function(defaults) {
     babel: { includePolyfill: true }
   });
 
-  app.import('bower_components/bootstrap/dist/css/bootstrap.css');
-  app.import('bower_components/bootstrap/js/tooltip.js');
-  app.import('bower_components/fontawesome/css/font-awesome.css');
-
   return app.toTree();
 };
