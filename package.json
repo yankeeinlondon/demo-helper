@@ -65,13 +65,12 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-htmlbars": "^1.0.5",
     "ember-cli-babel": "^5.1.6",
-    "ember-prism": "0.0.7",
+    "ember-cli-htmlbars": "^1.0.5",
     "ember-lazy-image": "twokul/ember-lazy-image",
-    "ui-icon": "^0.10.2",
-    "flexi": "1.1.7",
-    "ui-button": "^2.0.0-beta.4"
+    "ember-prism": "0.0.7",
+    "ui-button": "^2.0.0-beta.4",
+    "ui-icon": "^0.10.2"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
