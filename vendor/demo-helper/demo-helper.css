@@ -173,17 +173,6 @@
   text-align: center;
 }
 
-.demo-css code {
-  font-family: "Courier New", Courier, monospace;
-  line-spacing: 1rem;
-  flex-basis: 250px;
-  background-color: inherit;
-  color: #3F3F3F;
-}
-.demo-css code.wide {
-  flex-basis: 350px;
-}
-
 .demo-css description {
   flex-basis: 350px;
   flex-grow: 2;
@@ -269,8 +258,9 @@
   top: inherit;
 }
 
-
-
+.demo-css .downer {
+  padding-top: 15px;
+}
 
 .demo-css .components a code {
   padding: 6px;

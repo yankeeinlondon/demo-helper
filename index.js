@@ -10,7 +10,7 @@ module.exports = {
     target.import(target.bowerDirectory + '/prism/themes/prism.css');
     target.import(target.bowerDirectory + '/prism/prism.js');
   },
-  contentFor: function(type, config) {
+  contentFor: function(type) {
     switch(type) {
       case 'head':
         return '<link href="/demo-helper/images/emberjs-icon.png" rel="icon" type="image/png" />';
