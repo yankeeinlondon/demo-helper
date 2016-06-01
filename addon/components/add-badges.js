@@ -8,6 +8,8 @@ import layout from '../templates/components/add-badges';
 
 export default Ember.Component.extend({
   layout: layout,
+  tagName: '',
+  
   repo: computed.alias('name'),
   title: computed.alias('name'),
   repoOwner: 'lifegadget',

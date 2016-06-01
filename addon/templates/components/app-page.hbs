@@ -4,15 +4,13 @@
       <span class="title-block">
         {{add-page-header repo=repo npm=npm repoOwner=repoOwner subHeading=subHeading}}
       </span>
-      <span class="navigation">
-        {{#if notIndexPage}}
-            {{#link-to 'index'}}
-            <div class="back-navigation">
-                {{ui-icon icon='arrow-circle-left' size='5x' class='animated fadeIn'}}
-            </div>
-            {{/link-to}}
+      <div class="back-navigation">
+        {{#if (not-eq currentRoute 'index')}}
+          {{#link-to 'index'}}
+            {{ui-icon 'arrow-circle-left' size='5rem' class='animated fadeIn'}}
+          {{/link-to}}
         {{/if}}
-      </span>
+      </div>
   </div>
   <div class="page-content">
     {{#if hasBlock}}

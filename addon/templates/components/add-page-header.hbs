@@ -1,15 +1,16 @@
 {{#if repo}}
   <span class="addon-name">
-    <a href="https://github.com/{{repoOwner}}/{{repo}}">
-      {{repo}}
+    <h1>{{repo}}
+    <a class='github-link' href="https://github.com/{{repoOwner}}/{{repo}}">
+      {{ui-icon 'github' class='github-link' size='3rem'}}
     </a>
+    </h1>
   </span>
   <span class="sub-heading">
     {{subHeading}}
   </span>
-  <span class="badges">
-    {{add-badges repo=repo npm=npm repoOwner=repoOwner}}
-  </span>
+  {{add-badges repo=repo npm=npm repoOwner=repoOwner}}
+
 {{else}}
   <span class="warning">
     You must pass in a value for <prop>repo</prop> for add-page-header!

@@ -1,18 +1,20 @@
 /* jshint node: true */
 'use strict';
-var chalk = require('chalk');
 
 module.exports = {
   name: 'demo-helper',
-  included: function(app, parentAddon) {
-    var target = (parentAddon || app);
-    app.import('vendor/demo-helper/demo-helper.css');
-    target.import(target.bowerDirectory + '/bootstrap/dist/css/bootstrap.css');
-    target.import(target.bowerDirectory + '/fontawesome/css/font-awesome.css');
 
-    target.import(target.bowerDirectory + '/prism/themes/prism.css');
-    target.import(target.bowerDirectory + '/prism/prism.js');
+  included(app, parentAddon) {
+    const target = (parentAddon || app);
+    this._super.included(target);
+    target.import('vendor/demo-helper/demo-helper.css');
+    target.import('bower_components/prism/themes/prism.css');
+    target.import('bower_components/prism/prism.js');
+    target.import('bower_components/prism/components/prism-handlebars.js');
+    target.import('bower_components/prism/components/prism-javascript.js');
   },
+
+
   contentFor: function(type) {
     switch(type) {
       case 'head':
@@ -23,7 +25,5 @@ module.exports = {
   },
   afterInstall: function() {
     this.ui.writeLine('Demo Helper installed!');
-    this.ui.writeLine();
-    this.ui.writeLine('use ' + chalk.bold('app-page') + ' in your application.hbs dummy app.');
   }
 };

@@ -1,4 +1,8 @@
 // CSS for demo-helper component
+.container {
+  margin-top: 2em;
+}
+
 .demo-css h1 {
   font-size: 4rem;
   padding-bottom: 0px;
@@ -14,32 +18,44 @@
   font-weight: 500;
   margin: auto 2px auto 2px;
 }
-.demo-css a:hover {
+.demo-css a.link:hover {
   background: lightgrey;
   border-radius: 5px;
 }
-.demo-css h2,
 .demo-css .title-block .sub-heading {
   position: relative;
-  top: -10px;
+  top: -18px;
   left: 4px;
   font-weight: 100;
   font-size: 1.7rem;
   font-style: italic;
   color: darkgrey;
 }
-.demo-css .title-block .badges {
+.demo-css .title-block span.badges {
+  display: flex;
+  flex: 0 0;
+  position: relative;
+  top: -18px;
   line-height: 1;
   margin-left: 1px;
-  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-.demo-css .title-block .badges > a {
-  flex: 1 1;
-  flex-basis: 150px;
+
+.demo-css .badges > a {
+  display:flex;
+}
+
+.demo-css .badges .badge {
+  flex: 0 0;
+  margin: 0.15em;
 }
 .demo-css .badges .lazy-image-container {
-  display:flex;
-  min-height: 10px;
+  position: relative;
+  top: -10px;
+  display: flex;
+  flex: 1 0 150px;
+  min-height: 30px;
 }
 .demo-css .lazy-image-container.loaded .lazy-image-placeholder {
   display:none;
@@ -74,7 +90,6 @@
   margin-top: 0px;
 }
 .demo-css h5 {
-  text-decoration: underline;
   font-weight: bold;
 }
 
@@ -88,11 +103,6 @@
   display: flex;
   width: 100%;
   flex-wrap: wrap;
-}
-
-.demo-css row > * {
-  flex: 1 1;
-  margin: 15px 5px 5px 5px;
 }
 
 .demo-css widget {
@@ -232,10 +242,7 @@
 .demo-css .page-header .title-block {
   flex: 1 1;
 }
-.demo-css .page-header .navigation {
-  flex: 0 0;
-  margin-right: 25px;
-}
+
 .demo-css .title-block {
   display: flex;
   flex-direction: column;
@@ -245,17 +252,30 @@
   flex: 1 1;
 }
 
-
-.demo-css .back-navigation {
+.back-navigation {
+  position: relative;
+  top: -20px;
+  right: 0;
+  opacity: 75%;
+  background: none;
   flex: 0 1;
+  font-size: 5rem;
 }
-.demo-css .back-navigation i:hover {
+.back-navigation i {
+  color: lightgrey;
+}
+.back-navigation i:hover {
   color: #3D3D3D;
   transition-duration: 0.5s;
 }
-.demo-css .back-navigation {
-  position: relative;
-  top: inherit;
+
+.demo-css .github-link {
+  color: lightgrey;
+}
+.demo-css .github-link:hover {
+  color: #3D3D3D;
+  background: white;
+  transition-duration: 0.5s;
 }
 
 .demo-css .downer {
