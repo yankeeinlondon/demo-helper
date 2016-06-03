@@ -3,6 +3,23 @@
   margin-top: 2em;
 }
 
+.flex {
+  display: flex;
+  padding: 0.25em;
+}
+
+.flex.fit {
+  flex: 0 0;
+}
+
+.flex.fill {
+  flex: 1 0;
+}
+
+.flex.column {
+  flex-direction: column;
+}
+
 .demo-css h1 {
   font-size: 4rem;
   padding-bottom: 0px;

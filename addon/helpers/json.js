@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export function json(params) {
   const j = JSON.stringify(params[0], null, 2);
-  const pre = '<pre><code class="language-js">';
+  const pre = '<pre class="flex"><code class="language-js">';
   const post = '</code></pre>';
   return Ember.String.htmlSafe(`${pre}${j}${post}`);
 }
