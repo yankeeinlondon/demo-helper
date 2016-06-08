@@ -14,7 +14,6 @@ module.exports = {
     target.import('bower_components/prism/components/prism-javascript.js');
   },
 
-
   contentFor: function(type) {
     switch(type) {
       case 'head':
@@ -23,7 +22,4 @@ module.exports = {
         return '';
     }
   },
-  afterInstall: function() {
-    this.ui.writeLine('Demo Helper installed!');
-  }
 };

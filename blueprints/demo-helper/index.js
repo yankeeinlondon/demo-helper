@@ -21,6 +21,8 @@ module.exports = {
       {name: 'showdown', target: '*'},
       {name: 'fontawesome', target: '*'},
     ]);
+    this.ui.writeLine('demo-helper installed, now adding ui-bootstrap-plus');
+
     // const addons = this.addAddonsToProject([
     //   {name: 'ui-bootstrap-plus', target: '^0.0.5'},
     //   {name: 'ui-navigator-service', target: '^0.3.1'},
@@ -28,8 +30,6 @@ module.exports = {
 
     return RSVP.Promise.all([
       this.addAddonToProject('ui-bootstrap-plus'),
-      // this.addAddonToProject('ui-navigator-service'),
-      // addons,
       npm,
       bower
     ]);

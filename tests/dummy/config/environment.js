@@ -32,7 +32,6 @@ module.exports = function(environment) {
       // service defaults
       type: 'alpaca',
       types: [ 'alpaca', 'notice', 'foobar' ],
-      injectionFactories: [ 'route', 'controller', 'view', 'component' ],
       preventDuplicates: false
     },
     APP: {
