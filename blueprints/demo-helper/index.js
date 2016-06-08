@@ -3,14 +3,11 @@ const RSVP = require('rsvp');
 
 module.exports = {
   normalizeEntityName: function() {
-    // this prevents an error when the entityName is
-    // not specified (since that doesn't actually matter
-    // to us
+
   },
 
   afterInstall: function() {
     const npm = this.addPackagesToProject([
-      {name: "twokul/ember-lazy-image"},
       {name: 'chalk', target: '*'},
       {name: 'ui-markdown', target: '*'},
       {name: 'ui-image', target: '*'},
@@ -22,11 +19,6 @@ module.exports = {
       {name: 'fontawesome', target: '*'},
     ]);
     this.ui.writeLine('demo-helper installed, now adding ui-bootstrap-plus');
-
-    // const addons = this.addAddonsToProject([
-    //   {name: 'ui-bootstrap-plus', target: '^0.0.5'},
-    //   {name: 'ui-navigator-service', target: '^0.3.1'},
-    // ]);
 
     return RSVP.Promise.all([
       this.addAddonToProject('ui-bootstrap-plus'),
