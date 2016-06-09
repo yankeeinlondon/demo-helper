@@ -1,6 +1,5 @@
 /* jshint node: true */
 'use strict';
-
 module.exports = {
   name: 'demo-helper',
 
@@ -18,6 +17,7 @@ module.exports = {
     switch(type) {
       case 'head':
         return '<link href="/demo-helper/images/emberjs-icon.png" rel="icon" type="image/png" />';
+
       default:
         return '';
     }
