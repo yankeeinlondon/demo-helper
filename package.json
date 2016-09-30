@@ -1,6 +1,6 @@
 {
   "name": "demo-helper",
-  "version": "0.2.15",
+  "version": "0.2.16",
   "description": "WIP. Helper for demo apps of Ember addons.",
   "directories": {
     "doc": "doc",
