@@ -18,7 +18,7 @@ module.exports = {
       {name: 'showdown', target: '*'},
       {name: 'fontawesome', target: '*'},
     ]);
-    this.ui.writeLine('demo-helper installed, now adding ui-bootstrap-plus');
+    this.ui.writeLine('demo-helper installed, now adding ui-bootstrap-plus addon');
 
     return RSVP.Promise.all([
       this.addAddonToProject('ui-bootstrap-plus'),
